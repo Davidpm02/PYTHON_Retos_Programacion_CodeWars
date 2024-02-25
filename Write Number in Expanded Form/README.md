@@ -1,4 +1,4 @@
-# Descripción del Reto: Forma Expandida de un Número
+# Descripción del Reto
 
 Este reto consiste en desarrollar una función capaz de tomar un número entero positivo y devolver una cadena que represente este número en su forma expandida. Es decir, desglosar el número en cada uno de sus dígitos significativos multiplicados por su valor posicional, exceptuando los ceros, y luego unir estos componentes con el signo "+" para reflejar la suma que representan juntos.
 
