@@ -18,16 +18,3 @@ Dicho esto, si quieres proponerme cualquier mejora, o quieres contactar conmigo,
 <br>
 
 ---
-
-## Create Phone Number
-
-Escribe una función que acepte una matriz de 10 números enteros (entre 0 y 9), que devuelva una cadena de esos números en forma de número de teléfono.
-
-#### Ejemplo
-
-   - create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) # => devuelve "(123) 456-7890"
-
-   
-El formato devuelto debe ser correcto para poder completar este reto.
-
-¡No olvides el espacio después del paréntesis de cierre!
