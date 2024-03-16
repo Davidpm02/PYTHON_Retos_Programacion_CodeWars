@@ -1,4 +1,4 @@
-# Descripción del Desafío
+# Descripción
 
 Este desafío consiste en escribir una función que reciba una palabra y devuelva el carácter o caracteres del medio. Si la longitud de la palabra es impar, se debe retornar el carácter central. Si la longitud es par, se deben retornar los dos caracteres centrales.
 
