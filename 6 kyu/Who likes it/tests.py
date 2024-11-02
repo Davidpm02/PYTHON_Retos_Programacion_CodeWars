@@ -2,10 +2,7 @@ import sys
 import os
 import random
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import process_people_array
 
 
 example_trys_arrays = [[],
@@ -30,7 +27,7 @@ def test_process_people():
        no sea ahí, el test generará un error.
     """
     for index, _ in enumerate(example_trys_arrays):
-        result_str = challenge.process_people_array(_)
+        result_str = process_people_array(_)
         assert result_str == wanted_results[index]
         
        
