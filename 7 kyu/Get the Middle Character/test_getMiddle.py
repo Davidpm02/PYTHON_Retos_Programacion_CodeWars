@@ -1,10 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import getMiddle
 
 
 
@@ -26,5 +23,5 @@ def test_getMiddle():
     """
     
     for key, value in example_values_hashmap.items():
-        middle_on__character = challenge.getMiddle(key)
+        middle_on__character = getMiddle(key)
         assert middle_on__character == value
