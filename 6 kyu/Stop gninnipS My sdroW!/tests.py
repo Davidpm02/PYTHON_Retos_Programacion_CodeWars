@@ -2,11 +2,7 @@ import sys
 import os
 import random
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-
-import scripts.challenge as challenge
+from challenge import final_reversed_sentence_array, create_final_reversed_sentence
 
 def test_create_final_reversed_sentence():
     
@@ -26,8 +22,8 @@ def test_create_final_reversed_sentence():
     }
     
     for key, value in example_strings_hashmap.items():
-        final_reversed_array = challenge.final_reversed_sentence_array(key)
-        final_reversed_sentence = challenge.create_final_reversed_sentence(final_reversed_array)
+        final_reversed_array = final_reversed_sentence_array(key)
+        final_reversed_sentence = create_final_reversed_sentence(final_reversed_array)
         
         assert final_reversed_sentence == value
      
