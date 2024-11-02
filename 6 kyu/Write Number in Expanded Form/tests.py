@@ -1,13 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
-
-
-
+from challenge import expandedForm
 
 example_hashmap = {
     12:'10 + 2',
@@ -26,5 +20,5 @@ def test_expandedForm():
     """
        
     for key, value in example_hashmap.items():
-        expanded_form_str = challenge.expandedForm(key)
+        expanded_form_str = expandedForm(key)
         assert expanded_form_str == value
