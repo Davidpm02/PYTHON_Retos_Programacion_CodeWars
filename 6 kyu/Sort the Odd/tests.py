@@ -1,10 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import sorting_odds
 
 
 # Creo un array de arrays que actuen de prueba
@@ -40,5 +37,5 @@ def test_sorting_odds():
     """
     
     for index, array in enumerate(sample_arrays_array):
-        sorted_array = challenge.sorting_odds(array)
+        sorted_array = sorting_odds(array)
         assert sorted_array == expected_returned_arrays_array[index]
