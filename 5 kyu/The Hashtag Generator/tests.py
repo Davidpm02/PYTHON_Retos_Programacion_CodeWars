@@ -1,10 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import turnToHashtag
 
 
 
@@ -31,6 +28,6 @@ def test_turnToHashtag():
     """
     
     for key, value in example_values_hashmap.items():
-        final_hashtag = challenge.turnToHashtag(key)
+        final_hashtag = turnToHashtag(key)
         assert final_hashtag == value
     
