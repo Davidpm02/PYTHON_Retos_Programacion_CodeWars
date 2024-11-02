@@ -5,9 +5,7 @@ import sys
 import os
 import random
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import scripts.challenge as challenge
+from challenge import format_duration
 
 dict_proofs = {
     0: "now",
@@ -28,5 +26,5 @@ dict_proofs = {
 def test_kata():
     
     for key, value in dict_proofs.items():
-        readable_string = challenge.format_duration(key)
+        readable_string = format_duration(key)
         assert readable_string == value
