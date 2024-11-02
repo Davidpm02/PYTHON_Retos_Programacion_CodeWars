@@ -1,12 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-
-import scripts.challenge as challenge
-
+from challenge import validating_string
 
 
 tests = [("hello world_", False),
@@ -23,6 +18,6 @@ def test_validating_strings():
     """
     
     for example in tests:
-        result = challenge.validating_string(example[0])
+        result = validating_string(example[0])
         assert result == example[-1]
 
