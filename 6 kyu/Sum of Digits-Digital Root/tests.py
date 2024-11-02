@@ -2,10 +2,7 @@ import sys
 import os
 import random
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import digital_root
 
 
 example_values_hashmap = {
@@ -28,5 +25,5 @@ def test_digital_root():
     """
     
     for key, value in example_values_hashmap.items():
-        recursive_sum_result = challenge.digital_root(key)
+        recursive_sum_result = digital_root(key)
         assert recursive_sum_result == value
