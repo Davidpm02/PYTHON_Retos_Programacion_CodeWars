@@ -1,10 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import getSumMultiples
 
 random_values_hashmap = {
     4:3,
@@ -30,5 +27,5 @@ def test_getSumMultiples():
     """
     
     for key, value in random_values_hashmap.items():
-        sumMultiple = challenge.getSumMultiples(key)
+        sumMultiple = getSumMultiples(key)
         assert sumMultiple == value
