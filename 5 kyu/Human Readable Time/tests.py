@@ -1,11 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
-
+from challenge import set_strftime
 
 
 example_test_hashmap = {
@@ -28,5 +24,5 @@ def test_set_strftime():
     """
     
     for key, value in example_test_hashmap.items():
-        strftime_string = challenge.set_strftime(key)
+        strftime_string = set_strftime(key)
         assert strftime_string == value
