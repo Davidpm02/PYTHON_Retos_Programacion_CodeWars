@@ -1,10 +1,7 @@
 import sys
 import os
 
-# Agrego el directorio padre al sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-import scripts.challenge as challenge
+from challenge import make_reversed_list
 
 
 
